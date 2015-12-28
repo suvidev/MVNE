@@ -49,7 +49,8 @@ function goNextSQ(){
                 if(document.getElementById('global_action_menu').querySelector('a.global_action_link')){
 
                     window.location.href = window.location.href;
-
+                    GM_setValue("cRefresh", parseInt(cRefresh) + 1); 
+                    return;
                 }
             }
             
