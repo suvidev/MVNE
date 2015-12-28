@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name         Steam Next Queue
 // @namespace    http://axezor.blogspot.com
 // @version      0.2
@@ -16,7 +16,7 @@
 
 
 //GM_setValue("autoNextSQ", false); 
-//GM_setValue("nowRoundSQ", 1);
+//GM_setValue("nowRoundSQ", 0);
 
 // Your code here...
 function getNowRound(){
@@ -32,7 +32,7 @@ function getNowRound(){
 var autoNextSQ = GM_getValue("autoNextSQ");
 
 var nowRoundSQ = getNowRound();//parseInt(GM_getValue("nowRoundSQ"));
-
+var cRefresh = GM_getValue("cRefresh");
 
 function goNextSQ(){
     if(autoNextSQ){
@@ -45,24 +45,38 @@ function goNextSQ(){
             }
 
         }else{
+            if(document.getElementById('global_action_menu') && cRefresh < 3){
+                if(document.getElementById('global_action_menu').querySelector('a.global_action_link')){
 
-            if(document.querySelector('div.queue_actions_ctn div').onclick){
+                    window.location.href = window.location.href;
+
+                }
+            }
+            
+            GM_setValue("cRefresh", 0); 
+            
+            if(document.querySelector('div.queue_actions_ctn div')){
+
+                if(document.querySelector('div.queue_actions_ctn div').onclick){
 
 
-                if(document.querySelector('div.queue_actions_ctn div span')){
-                    if(document.querySelector('div.queue_actions_ctn div span').textContent === 'Finish Queue'){
-                        GM_setValue("autoNextSQ", false); 
+                    if(document.querySelector('div.queue_actions_ctn div span')){
+                        if(document.querySelector('div.queue_actions_ctn div span').textContent === 'Finish Queue'){
+                            GM_setValue("autoNextSQ", false); 
+                        }
                     }
+
+                    setTimeout(function(){ 
+                        document.querySelector('div.queue_actions_ctn div').click();
+                    },(2000));
+
+
+
+                }else{
+                    GM_setValue("autoNextSQ", false); 
                 }
 
-                setTimeout(function(){ 
-                    document.querySelector('div.queue_actions_ctn div').click();
-                },(3000));
-
-            }else{
-                GM_setValue("autoNextSQ", false); 
             }
-
         }
 
     }
