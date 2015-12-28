@@ -55,7 +55,9 @@ function goNextSQ(){
                     }
                 }
 
-                document.querySelector('div.queue_actions_ctn div').click();
+                setTimeout(function(){ 
+                    document.querySelector('div.queue_actions_ctn div').click();
+                },(3000));
 
             }else{
                 GM_setValue("autoNextSQ", false); 
