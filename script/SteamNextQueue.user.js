@@ -46,7 +46,7 @@ function goNextSQ(){
 
         }else{
             if(document.getElementById('global_action_menu') && cRefresh < 3){
-                if(document.getElementById('global_action_menu').querySelector('a.global_action_link')){
+                if(document.getElementById('global_action_menu').querySelector('a.global_action_link').id === ''){
 
                     window.location.href = window.location.href;
                     GM_setValue("cRefresh", parseInt(cRefresh) + 1); 
