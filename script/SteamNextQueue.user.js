@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Next Queue
 // @namespace    http://axezor.blogspot.com
-// @version      0.2
+// @version      0.3
 // @description  Enjoy :P
 // @author       AxEzOr
 // @match        http://store.steampowered.com/app/*
@@ -46,11 +46,13 @@ function goNextSQ(){
 
         }else{
             if(document.getElementById('global_action_menu') && cRefresh < 3){
-                if(document.getElementById('global_action_menu').querySelector('a.global_action_link').id === ''){
+                if(document.getElementById('global_action_menu').querySelector('a.global_action_link')){
+                    if(document.getElementById('global_action_menu').querySelector('a.global_action_link').id === ''){
 
-                    window.location.href = window.location.href;
-                    GM_setValue("cRefresh", parseInt(cRefresh) + 1); 
-                    return;
+                        window.location.href = window.location.href;
+                        GM_setValue("cRefresh", parseInt(cRefresh) + 1); 
+                        return;
+                    }
                 }
             }
             
