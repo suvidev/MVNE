@@ -34,6 +34,10 @@ var autoNextSQ = GM_getValue("autoNextSQ");
 var nowRoundSQ = getNowRound();//parseInt(GM_getValue("nowRoundSQ"));
 var cRefresh = GM_getValue("cRefresh");
 
+//console.log('nowRoundSQ = '+nowRoundSQ);
+//console.log('autoNextSQ = '+autoNextSQ);
+//console.log('cRefresh = '+cRefresh);
+
 function goNextSQ(){
     if(autoNextSQ){
 
@@ -64,7 +68,7 @@ function goNextSQ(){
 
 
                     if(document.querySelector('div.queue_actions_ctn div span')){
-                        if(document.querySelector('div.queue_actions_ctn div span').textContent === 'Finish Queue'){
+                        if(document.querySelector('div.queue_actions_ctn div span').textContent === 'Finish Queue' ||  document.querySelector('div.queue_actions_ctn div span').textContent === 'สิ้นสุดคิว'){
                             GM_setValue("autoNextSQ", false); 
                         }
                     }
@@ -90,7 +94,7 @@ if(autoNextSQ){
 }else{
     
     if(nowRoundSQ <= 2){
-        
+        console.log('G1');
         if(document.getElementById('refresh_queue_btn')){
             GM_setValue("autoNextSQ", true); 
             GM_setValue("nowRoundSQ", parseInt(nowRoundSQ) + 1);
