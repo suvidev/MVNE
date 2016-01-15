@@ -8,6 +8,8 @@
 // @match        http://banmanga.com/*
 // @grant        none
 // ==/UserScript==
+/* jshint -W097 */
+'use strict';
 
 
 function showObj(){
