@@ -70,7 +70,7 @@ if(document.querySelector('content')){
 if(document.querySelectorAll('content img').length > 0){
     var imgList = document.querySelectorAll('content img');
 
-    for(i=0;i<imgList.length;i++){
+    for(var i=0;i<imgList.length;i++){
         imgList[i].style.maxHeight = '100%';
     }
 }
@@ -79,7 +79,7 @@ if(document.querySelectorAll('content img').length > 0){
 if(document.querySelectorAll('div.king-q-view-main img').length > 0){
     var imgList2 = document.querySelectorAll('div.king-q-view-main img');
 
-    for(i2=0;i2<imgList2.length;i2++){
+    for(var i2=0;i2<imgList2.length;i2++){
         imgList2[i2].style.maxHeight = '100%';
     }
 }
