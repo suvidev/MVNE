@@ -72,6 +72,10 @@ function goToViewBMG(){
     }
     
     if(document.querySelector('div.leftmenu')){
+        
+        if(document.querySelector('div.leftmenu')){
+            document.querySelector('div.leftmenu').style.opacity = '0';
+        }
     
         document.querySelector('div.leftmenu').addEventListener('mouseover', function() {
             showObj();
@@ -81,10 +85,7 @@ function goToViewBMG(){
             hideObj();
         });
     
-    
-        if(document.querySelector('div.leftmenu')){
-            document.querySelector('div.leftmenu').style.opacity = '0';
-        }
+        
     
     }
     
@@ -96,4 +97,4 @@ function goToViewBMG(){
 }
 
 
-//goToViewBMG();
+goToViewBMG();
