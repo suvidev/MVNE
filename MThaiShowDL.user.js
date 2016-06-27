@@ -5,6 +5,8 @@
 // @description Enjoy.
 // @author AxEzOr
 // @match http://video.mthai.com/*/player/*
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/MThaiShowDL.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/MThaiShowDL.user.js
 // @grant none
 // ==/UserScript==
 //--- Config ----//
