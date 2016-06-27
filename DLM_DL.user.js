@@ -6,6 +6,8 @@
 // @author       AxEzOr
 // @match        http://www.dailymotion.com/video/*
 // @match        http://www.dailymotion.com/embed/video/*
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/DLM_DL.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/DLM_DL.user.js
 // @grant        none
 // ==/UserScript==
 
