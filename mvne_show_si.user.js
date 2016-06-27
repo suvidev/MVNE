@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MVNE-SHOW-SI
 // @namespace    http://kormajudpai.blogspot.com
-// @version      0.2
+// @version      0.3
 // @description  Enjoy :)
 // @author       AxEzOr
 // @match        http://bsspreprod.catmvne.co.th/*
@@ -11,12 +11,78 @@
 // @grant        none
 // ==/UserScript==
 
+
 (function() {
     'use strict';
 
     // Your code here...
+
+
+    var GBGM_KEY = "MVSSI_";
+
+    function isNumber(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+
+    function GM_setValue(vKeyv, vValuev) {
+        localStorage.setItem(GBGM_KEY + vKeyv, vValuev);
+    }
+
+    function GM_getValue(vKeyv) {
+
+        var vlu = localStorage.getItem(GBGM_KEY + vKeyv);
+
+        if (vlu === 'true') {
+            return true;
+        } else if (vlu === 'false') {
+            return false;
+        } else if (isNumber(vlu)) {
+            return parseFloat(vlu);
+        } else if (vlu === 'null') {
+            return null;
+        }
+
+        return vlu;
+    }
+
+
+    function addShowCheckbox(){
+
+        if(!document.getElementById('ssciCB') && document.getElementById('menu')){
+
+            var cbFFx = document.createElement("INPUT");
+            cbFFx.style.position = 'fixed';
+            cbFFx.style.right = '7px';
+            cbFFx.id = 'ssciCB';
+            cbFFx.setAttribute("type", "checkbox");
+            cbFFx.style.marginLeft = '8px';
+            cbFFx.style.display = 'block';
+
+            cbFFx.addEventListener('change', function() {
+                GM_setValue('showHistory', this.checked); 
+
+                if(this.checked){
+                    document.getElementById('menu').style.position = 'fixed';
+                }else{
+                    document.getElementById('menu').style.position = 'absolute';
+                }
+            });
+
+            cbFFx.checked = GM_getValue('showHistory');
+
+            document.getElementById('menu').style.position = 'fixed';
+            document.getElementById('menu').style.right = '7px';
+
+            document.getElementById('menu').appendChild(cbFFx);
+
+        }
+    }
+
+
+
+
     function genShowAccNo(){
-       // console.log('...b.');
+        // console.log('...b.');
         //if(document.getElementById('accountinfolistbox-rows')){
 
         if( document.querySelectorAll('td div a[id*="serviceinstancename"]').length > 0 ){
@@ -59,8 +125,9 @@
 
             }
 
+
         }
-        
+
 
 
         //}
@@ -71,6 +138,7 @@
         //console.log('a....');
         // if(!document.getElementById('fbvdlv2')){
         genShowAccNo();  
+        addShowCheckbox();
         //  }
 
         //console.log('loop 1');
