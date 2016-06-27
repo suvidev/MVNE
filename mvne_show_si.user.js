@@ -70,8 +70,10 @@
 
             cbFFx.checked = GM_getValue('showHistory');
 
-            document.getElementById('menu').style.position = 'fixed';
-            document.getElementById('menu').style.right = '7px';
+            if(GM_getValue('showHistory')){
+                document.getElementById('menu').style.position = 'fixed';
+                document.getElementById('menu').style.right = '7px';
+            }
 
             document.getElementById('menu').appendChild(cbFFx);
 
