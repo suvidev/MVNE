@@ -10,6 +10,8 @@
 // @match http://www.facebook.com/video.php?v=*
 // @match https://www.facebook.com/photo.php?v=*
 // @match http://www.facebook.com/photo.php?v=*
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/FB_VDL_2.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/FB_VDL_2.user.js
 // @grant none
 // --@grant GM_setValue
 // --@grant GM_getValue
