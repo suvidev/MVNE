@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MVNE-SHOW-SI
 // @namespace    http://kormajudpai.blogspot.com
-// @version      0.3
+// @version      0.4
 // @description  Enjoy :)
 // @author       AxEzOr
 // @match        http://bsspreprod.catmvne.co.th/*
