@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MVNE-SHOW-SI
 // @namespace    http://kormajudpai.blogspot.com
-// @version      0.4
+// @version      0.5
 // @description  Enjoy :)
 // @author       AxEzOr
 // @match        http://bsspreprod.catmvne.co.th/*
@@ -63,6 +63,7 @@
 
                 if(this.checked){
                     document.getElementById('menu').style.position = 'fixed';
+                    document.getElementById('menu').style.right = '7px';
                 }else{
                     document.getElementById('menu').style.position = 'absolute';
                 }
