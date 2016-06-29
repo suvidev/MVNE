@@ -6,8 +6,8 @@
 // @author       XG
 // @require      http://code.jquery.com/jquery-latest.js
 // @match        http://store.steampowered.com/*
-// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/mvne_show_si.user.js
-// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/mvne_show_si.user.js
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/SteamAutoQueue.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/SteamAutoQueue.user.js
 // @grant        none
 // ==/UserScript==
 /* jshint -W097 */
