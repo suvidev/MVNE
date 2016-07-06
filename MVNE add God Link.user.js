@@ -5,6 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        http://crm.catmvne.co.th/index.php?module=Accounts&view=DashBoard
+// @match        http://crmpreprod.catmvne.co.th/index.php?module=Accounts&view=DashBoard
 // @grant        none
 // ==/UserScript==
 
