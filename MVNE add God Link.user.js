@@ -40,9 +40,8 @@
     
     function loopingFunction1() {
 
-    if(!document.getElementById('fbvdlv2')){
-        genGodLink();  
-    }
+     genGodLink();  
+    
 
     //console.log('loop 1');
     setTimeout(loopingFunction1, 1000);
