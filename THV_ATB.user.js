@@ -6,6 +6,8 @@
 // @author AxEzOr
 // @match http://hentaiverse.org/*
 // @grant none
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/THV_ATB.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/THV_ATB.user.js
 // @grant GM_deleteValue
 // @icon http://g.e-hentai.org/favicon.ico
 // ==/UserScript==
