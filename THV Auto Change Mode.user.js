@@ -6,6 +6,8 @@
 // @author AxEzOr
 // @match http://hentaiverse.org/*
 // @grant none
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/THV%20Auto%20Change%20Mode.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/THV%20Auto%20Change%20Mode.user.js
 // @icon http://g.e-hentai.org/favicon.ico
 // ==/UserScript==
 
