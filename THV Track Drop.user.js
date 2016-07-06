@@ -5,8 +5,9 @@
 // @description  Enjoy :)
 // @author       AxEzOr
 // @match        http://hentaiverse.org/*
-// --@--match        file:///C:/Users/AxEzOr/Downloads/Video/THV/The%20HentaiVerse.html
 // @grant        none
+// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/THV%20Track%20Drop.user.js
+// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/THV%20Track%20Drop.user.js
 // @icon http://g.e-hentai.org/favicon.ico
 // ==/UserScript==
 
