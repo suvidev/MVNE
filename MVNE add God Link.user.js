@@ -8,6 +8,7 @@
 // @match        http://crmpreprod.catmvne.co.th/index.php?module=Accounts&view=DashBoard
 // @updateURL       https://github.com/suvidev/MVNE/raw/master/MVNE%20add%20God%20Link.user.js
 // @downloadURL     https://github.com/suvidev/MVNE/raw/master/MVNE%20add%20God%20Link.user.js
+// @icon        http://bsspreprod.catmvne.co.th/images/crestel_favicon.ico
 // @grant        none
 // ==/UserScript==
 
