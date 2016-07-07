@@ -6,8 +6,8 @@
 // @author       AxEzOr
 // @match        http://bsspreprod.catmvne.co.th/*
 // @match        http://bssom.catmvne.co.th/*
-// @updateURL       https://github.com/axezor/Steam-Next-Queue/raw/master/mvne_show_si.user.js
-// @downloadURL     https://github.com/axezor/Steam-Next-Queue/raw/master/mvne_show_si.user.js
+// @updateURL       https://github.com/suvidev/MVNE/raw/master/mvne_show_si.user.js
+// @downloadURL     https://github.com/suvidev/MVNE/raw/master/mvne_show_si.user.js
 // @grant        none
 // ==/UserScript==
 
