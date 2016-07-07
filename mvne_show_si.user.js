@@ -146,7 +146,7 @@
         //  }
 
         //console.log('loop 1');
-        setTimeout(loopingFunction1, 3000);
+        setTimeout(loopingFunction1, 2000);
     }
 
 
