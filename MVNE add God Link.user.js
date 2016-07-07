@@ -6,6 +6,8 @@
 // @author       You
 // @match        http://crm.catmvne.co.th/index.php?module=Accounts&view=DashBoard
 // @match        http://crmpreprod.catmvne.co.th/index.php?module=Accounts&view=DashBoard
+// @updateURL       https://github.com/suvidev/MVNE/raw/master/MVNE%20add%20God%20Link.user.js
+// @downloadURL     https://github.com/suvidev/MVNE/raw/master/MVNE%20add%20God%20Link.user.js
 // @grant        none
 // ==/UserScript==
 
