@@ -8,6 +8,7 @@
 // @match        http://bssom.catmvne.co.th/*
 // @updateURL       https://github.com/suvidev/MVNE/raw/master/mvne_show_si.user.js
 // @downloadURL     https://github.com/suvidev/MVNE/raw/master/mvne_show_si.user.js
+// @icon        http://bsspreprod.catmvne.co.th/images/crestel_favicon.ico
 // @grant        none
 // ==/UserScript==
 
