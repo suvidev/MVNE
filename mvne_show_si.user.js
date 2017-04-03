@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         MVNE-SHOW-SI
 // @namespace    http://kormajudpai.blogspot.com
-// @version      0.5
+// @version      0.6
 // @description  Enjoy :)
 // @author       AxEzOr
 // @match        http://bsspreprod.catmvne.co.th/*
 // @match        http://bssom.catmvne.co.th/*
+// @match        http://bsspreprod622.catmvne.co.th/*
 // @updateURL       https://github.com/suvidev/MVNE/raw/master/mvne_show_si.user.js
 // @downloadURL     https://github.com/suvidev/MVNE/raw/master/mvne_show_si.user.js
 // @icon        http://bsspreprod.catmvne.co.th/images/crestel_favicon.ico
